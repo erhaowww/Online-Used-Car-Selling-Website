@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="membershipDetails.xsl" ?>
+<!DOCTYPE customers SYSTEM "customers.dtd">
+<customers>
+<customer id="18"><name>chye wenn han</name><email>wennhan@gmail.com</email><phone>121212</phone><total-spent>2226100</total-spent><membership-level>platinum</membership-level><discount>8.0</discount></customer><customer id="32"><name>bronze</name><email>bronze@gmail.com</email><phone/><total-spent>124060</total-spent><membership-level>bronze</membership-level><discount>3.0</discount></customer><customer id="31"><name>silver</name><email>silver@gmail.com</email><phone/><total-spent>182190</total-spent><membership-level>silver</membership-level><discount>4.0</discount></customer><customer id="30"><name>gold</name><email>gold@gmail.com</email><phone/><total-spent>171340</total-spent><membership-level>platinum</membership-level><discount>8.0</discount></customer><customer id="29"><name>platinum</name><email>platinum@gmail.com</email><phone/><total-spent>209270</total-spent><membership-level>platinum</membership-level><discount>8.0</discount></customer></customers>

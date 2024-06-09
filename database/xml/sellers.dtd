@@ -1,0 +1,25 @@
+<!ELEMENT sellers (seller*)>
+<!ELEMENT seller (seller_id, car)>
+<!ELEMENT seller_id (#PCDATA)>
+<!ELEMENT car (make, model, year, mileage, color, transmission, description, image, price, buyer)>
+<!ELEMENT make (#PCDATA)>
+<!ELEMENT model (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT mileage (#PCDATA)>
+<!ELEMENT color (#PCDATA)>
+<!ELEMENT transmission (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT image (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT buyer (name, email)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+
+<!ATTLIST seller_id
+    ID CDATA #REQUIRED>
+
+<!ATTLIST image
+    type CDATA #REQUIRED>
+
+<!ATTLIST buyer
+    payment CDATA #REQUIRED>

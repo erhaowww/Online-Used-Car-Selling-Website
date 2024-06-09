@@ -1,0 +1,5 @@
+<!ELEMENT delivery (car*)>
+<!ELEMENT car (payment_id, delivery_date, delivery_status)>
+<!ELEMENT payment_id (#PCDATA)>
+<!ELEMENT delivery_date (#PCDATA)>
+<!ELEMENT delivery_status (#PCDATA)>

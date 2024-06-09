@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://www.symbolab.com/ch_widget2.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script type="text/javascript" src="./jquery.min.js.download"></script>
+<script type="text/javascript" src="./Widgets_ch_widget2.min.js.download"></script>
+<link href="./Widgets_ch_widget2.min.css" rel="Stylesheet" type="text/css">
+</head>
+<body id="ch_widget">
+<div class="widgetPanel">
+<div class="codepad-input">
+<div class="inputDiv">
+<div class="widgetInput mathquill-editable mathquill-rendered-math placeholder" rel="tooltip" title=""><span class="textarea"><textarea></textarea></span><span class="roman font"><var>E</var><var>n</var><var>t</var><var>e</var><var>r</var><span> </span><var>a</var><span> </span><var>p</var><var>r</var><var>o</var><var>b</var><var>l</var><var>e</var><var>m</var></span></div>
+</div>
+</div>
+<div class="codepadbody">
+<table id="buttonsTable" class="top-buttons">
+<tbody>
+<tr>
+<td class="top-left pad-menu selected" data-id="#BasicPad"><span class="padMenuText">Basic</span></td>
+<td class="top-right pad-menu" data-id="#CalcPad"><span class="mathquill-embedded-latex mathquill-rendered-math"><span class="selectable"></span><b class="text"><big>∑</big><span> </span><big>∫</big><span> </span><big>∏</big></b></span></td>
+</tr>
+<tr>
+<td class="pad-menu" data-id="#TrigPad"><span class="padMenuText">sin cos</span></td>
+<td class="pad-menu" data-id="#SignsPad"><span class="mathquill-embedded-latex font18 mathquill-rendered-math"><span class="selectable"></span><b class="text"><span class="binary-operator">≠</span><span class="binary-operator">÷</span><span class="binary-operator">×</span></b></span></td>
+</tr>
+</tbody>
+</table>
+<table id="BasicPad" class="buttons">
+<tbody>
+<tr>
+<td class="pad-button" data-append="^{2}" data-moveleft="0"><span class="mathquill-embedded-latex mathquill-rendered-math"><span class="selectable"></span><span>☐</span><sup class=""><span>2</span></sup></span></td>
+<td class="pad-button" data-append="^" data-moveleft="1"><span class="mathquill-embedded-latex mathquill-rendered-math"><span class="selectable"></span><var>x</var><sup class=""><span>☐</span></sup></span></td>
+<td class="pad-button" data-append="\sqrt" data-moveleft="1"><span class="mathquill-embedded-latex mathquill-rendered-math"><span class="selectable"></span><span class="block"><span class="sqrt-prefix" style="transform: scale(1, 1.06848);">√</span><span class="sqrt-stem"><span>☐</span></span></span></span></td>
+</tr>
+<tr>
+<td class="bottom-left pad-button" data-append="\frac{}{}" data-moveleft="2"><span class="mathquill-embedded-latex mathquill-rendered-math"><span class="selectable"></span><span class="fraction"><span class="numerator"><span>□</span></span><span class="denominator"><span>□</span></span><span style="display:inline-block;width:0">&nbsp;</span></span></span></td>
+<td class="pad-button" data-append="\le" data-moveleft="0"><span class="mathquill-embedded-latex mathquill-rendered-math"><span class="selectable"></span><span class="binary-operator">≤</span></span></td>
+<td class="bottom-right pad-button" data-append="\ge" data-moveleft="0"><span class="mathquill-embedded-latex mathquill-rendered-math"><span class="selectable"></span><span class="binary-operator">≥</span></span></td>
+</tr>
+</tbody>
+</table>
+<table id="CalcPad" class="buttons" style="display: none">
+<tbody>
+<tr>
+<td class="pad-button" data-append="\frac{d}{dx}\left(\right)" data-moveleft="1"><span class="mathquill-embedded-latex mathquill-rendered-math"><span class="selectable"></span><span class="fraction"><span class="numerator"><var>d</var></span><span class="denominator"><var>dx</var></span><span style="display:inline-block;width:0">&nbsp;</span></span></span></td>
+<td class="pad-button" data-append="\int" data-moveleft="0"><span class="mathquill-embedded-latex mathquill-rendered-math"><span class="selectable"></span><big>∫</big></span></td>
+<td class="pad-button" data-append="\int_{}^{}\:" data-moveleft="4"><span class="mathquill-embedded-latex mathquill-rendered-math"><span class="selectable"></span><big>∫</big><sub class="limit" style="left: -0.25em;"><span>□</span></sub><sup class="limit" style="left: 0em; margin-right: 0.1em;"><span>□</span></sup></span></td>
+</tr>
+<tr>
+<td class="bottom-left pad-button" data-append="\lim_{x\to\infty}\left(\right)" data-moveleft="1"><span class="mathquill-embedded-latex mathquill-rendered-math"><span class="selectable"></span><span class="non-italicized-function">lim</span></span></td>
+<td class="pad-button" data-append="\sum_{n=0}^{\infty}\:" data-moveleft="0"><span class="mathquill-embedded-latex mathquill-rendered-math"><span class="selectable"></span><big>∑</big></span></td>
+<td class="bottom-right pad-button" data-append="\inf" data-moveleft="0"><span class="mathquill-embedded-latex mathquill-rendered-math"><span class="selectable"></span><span>∞</span></span></td>
+</tr>
+</tbody>
+</table>
+<table id="TrigPad" class="buttons" style="display: none">
+<tbody>
+<tr>
+<td class="pad-button" data-append="\sin\left(\right)" data-moveleft="1"><span class="mathquill-embedded-latex mathquill-rendered-math"><span class="selectable"></span><span class="non-italicized-function">sin</span></span></td>
+<td class="pad-button" data-append="\cos\left(\right)" data-moveleft="1"><span class="mathquill-embedded-latex mathquill-rendered-math"><span class="selectable"></span><span class="non-italicized-function">cos</span></span></td>
+<td class="pad-button" data-append="\tan\left(\right)" data-moveleft="1"><span class="mathquill-embedded-latex mathquill-rendered-math"><span class="selectable"></span><span class="non-italicized-function">tan</span></span></td>
+</tr>
+<tr>
+<td class="bottom-left pad-button" data-append="\cot\left(\right)" data-moveleft="1"><span class="mathquill-embedded-latex mathquill-rendered-math"><span class="selectable"></span><span class="non-italicized-function">cot</span></span></td>
+<td class="pad-button" data-append="\csc\left(\right)" data-moveleft="1"><span class="mathquill-embedded-latex mathquill-rendered-math"><span class="selectable"></span><span class="non-italicized-function">csc</span></span></td>
+<td class="bottom-right pad-button" data-append="\sec\left(\right)" data-moveleft="1"><span class="mathquill-embedded-latex mathquill-rendered-math"><span class="selectable"></span><span class="non-italicized-function">sec</span></span></td>
+</tr>
+</tbody>
+</table>
+<table id="SignsPad" class="buttons" style="display: none">
+<tbody>
+<tr>
+<td class="pad-button" data-append="\cdot"><span class="mathquill-embedded-latex mathquill-rendered-math"><span class="selectable"></span><span class="binary-operator">·</span></span></td>
+<td class="pad-button" data-append="\div"><span class="mathquill-embedded-latex mathquill-rendered-math"><span class="selectable"></span><span class="binary-operator">÷</span></span></td>
+<td class="pad-button" data-append="\times"><span class="mathquill-embedded-latex mathquill-rendered-math"><span class="selectable"></span><span class="binary-operator">×</span></span></td>
+</tr>
+<tr>
+<td class="bottom-left pad-button" data-append="!"><span class="mathquill-embedded-latex mathquill-rendered-math"><span class="selectable"></span><var>x</var><span>!</span></span></td>
+<td class="pad-button" data-append="^{\circ}" data-moveleft="0"><span class="mathquill-embedded-latex mathquill-rendered-math"><span class="selectable"></span><var>x</var><sup class=""><span>◦</span></sup></span></td>
+<td class="bottom-right pad-button" data-append="\left|\right|" data-moveleft="1"><span class="mathquill-embedded-latex mathquill-rendered-math"><span class="selectable"></span><span class="block"><span class="paren" style="transform: scale(0.815, 0.07875);">|</span><span class="block" style=""><span>☐</span></span><span class="paren" style="transform: scale(0.815, 0.07875);">|</span></span></span></td>
+</tr>
+</tbody>
+</table>
+<div style="clear: both;"></div>
+</div>
+<div class="solve actionButton">Solve</div>
+<div class="errorMsg">Please enter a problem</div>
+<div class="solution_div">
+<div class="solutionHolder">
+<div class="solutionTitle">Solution:</div>
+<div class="solution mathquill-embedded-latex mathquill-rendered-math empty"><span class="selectable"></span></div>
+</div>
+<div class="steps actionButton">Show steps</div>
+<div class="calc actionButton">Back to calculator</div>
+<div style="clear: both;"></div>
+</div>
+</div>
+
+<script>
+	var stepsLink;
+	var maxInputWidth = 260;
+
+	var i18n = function(code) {
+		return code.capitalize();
+	};
+
+	$('div.steps').click(function() {
+		window.parent.postMessage('SYMBOLAB_CLICKED_STEPS:'+stepsLink, "*");
+	});
+
+	$("body").on("click", "div.solve", function (event) {
+		doSearch();
+	});
+
+	$("body").on("click", "div.calc", function (event) {
+		$(".widgetPanel").removeClass('solution_view');
+	});
+
+	$(document).ready(function() {
+		symbolab_log2('Registration', 'SeenFeature', "CHWidget\tSolution");
+	});
+
+
+	function doSearch(){
+		$(".widgetPanel").removeClass('error');
+		var query = $('.mathquill-editable').mathquill('latex');
+		if (!/[a-zA-Z0-9]/.test(query)){
+			$(".widgetPanel").addClass('error');
+			return;
+		}
+		$(".solutionHolder").css("overflow-x", "");
+		$(".solutionHolder >div").css("width", "");
+		$("div.steps").removeClass('nl-disabled');
+		symbolab_log2('Registration', 'ClickedFeature', "CHWidget\tSolution");
+		$.ajax({
+			type: "GET",
+			async: true,
+			url: '/pub_api/solution2',
+			data: {
+				query: query,
+				origin: "chWidgetSolution"
+			},
+			success: function(res){
+				window.parent.postMessage('SYMBOLAB_CLICKED_SOLVE:'+query, "*");
+				$(".solution").empty();
+				$(".widgetPanel").addClass('solution_view');
+				if(res && res.default){
+					res.default = res.default.replace("<", "&lt;");
+					res.default = res.default.replace(">", "&gt;");
+					$(".solution").append(res.default);
+					$(".solution").mathquill();
+					var solutionWidth = getWidth($(".solution"));
+					if (solutionWidth > 300){
+						$(".solutionHolder").css("overflow-x", "scroll");
+						solutionWidth += 50;
+						$(".solutionHolder >div").css("width", solutionWidth+'px');
+					}
+					stepsLink = 'https://www.symbolab.com/ch_steps2.html?locks=true&query='+encodeURIComponent(query);
+					$(".show-hide-steps").attr("href", stepsLink);
+					$(".show-hide-steps").show();
+				}
+				else{
+					$(".solution").append("No result found");
+					$(".show-hide-steps").hide();
+					$("div.steps").addClass('nl-disabled');
+				}
+			}
+		});
+	}
+
+</script>
+</body></html>

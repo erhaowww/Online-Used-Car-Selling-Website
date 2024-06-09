@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!ELEMENT customers (customer*)>
+<!ELEMENT customer (name, total-spent, membership-level, discount, email, phone)>
+<!ATTLIST customer id ID #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name pattern CDATA "^[a-zA-Z\s]*$">
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT total-spent (#PCDATA)>
+<!ELEMENT membership-level (#PCDATA)>
+<!ELEMENT discount (#PCDATA)>
+<!ATTLIST total-spent currency CDATA "RM">
